@@ -29,8 +29,8 @@ public class WrappedProviderWebService {
     }
 
     public List<WrappedProvider> getProviders(String nationalId, String directoryId) {
-//        String httpAddress = "http://zhrisproject.hitrac.co.zw:9094/CSD/csr/" + directoryId + "/careServicesRequest";
-        String httpAddress = "http://localhost:8984/CSD/csr/" + directoryId + "/careServicesRequest";
+        String httpAddress = "http://zhrisproject.hitrac.co.zw:9094/CSD/csr/" + directoryId + "/careServicesRequest";
+//        String httpAddress = "http://localhost:8984/CSD/csr/" + directoryId + "/careServicesRequest";
 
         List<WrappedProvider> wrappedProviders = ProviderFinder.getProviderFromAllDirectories(nationalId, httpAddress);
         return wrappedProviders;
