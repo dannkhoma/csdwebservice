@@ -6,7 +6,7 @@ import zw.co.hitrac.jaxcsd.api.domain.Facility;
  *
  * @author Daniel Nkhoma
  */
-public class LiteFacility extends LiteCsdEntity {
+public class LiteFacility {
 
     private String primaryName;
 
@@ -15,6 +15,7 @@ public class LiteFacility extends LiteCsdEntity {
     }
 
     public void setPrimaryName(String primaryName) {
+
         this.primaryName = primaryName;
     }
 

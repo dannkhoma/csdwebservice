@@ -6,7 +6,7 @@ import zw.co.hitrac.jaxcsd.api.domain.Organization;
  *
  * @author Daniel Nkhoma
  */
-public class LiteOrganization extends LiteCsdEntity {
+public class LiteOrganization {
 
     private String primaryName;
 

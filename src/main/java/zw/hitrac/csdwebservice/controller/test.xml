@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<List>
+    <item>
+        <firstName>EDGAR</firstName>
+        <lastName>BANDA</lastName>
+        <credentials>
+            <credentials>
+                <issueDate>1393624800000</issueDate>
+                <renewalDate>1427752800000</renewalDate>
+                <issueAuthority>NCZ</issueAuthority>
+                <number>394233</number>
+            </credentials>
+        </credentials>
+        <codedTypes>
+            <codedTypes>
+                <code>22CA969E-C155-11E3-8E8C-009C02998F38</code>
+                <codingScheme>NCZ</codingScheme>
+                <value>GENERAL NURSE</value>
+            </codedTypes>
+        </codedTypes>
+        <facilities/>
+        <organizations>
+            <organizations>
+                <codedTypes/>
+                <primaryName>Nurses Council of Zimbabwe(NCZ)</primaryName>
+            </organizations>
+        </organizations>
+    </item>
+</List>

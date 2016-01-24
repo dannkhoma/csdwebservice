@@ -1,6 +1,5 @@
 package zw.hitrac.csdwebservice.domain;
 
-import java.util.Date;
 import zw.co.hitrac.jaxcsd.api.domain.Credential;
 
 /**
@@ -9,24 +8,24 @@ import zw.co.hitrac.jaxcsd.api.domain.Credential;
  */
 public class LiteCredential {
 
-    private Date issueDate;
-    private Date renewalDate;
+    private String issueDate;
+    private String renewalDate;
     private String issueAuthority;
     private String number;
 
-    public Date getIssueDate() {
+    public String getIssueDate() {
         return issueDate;
     }
 
-    public void setIssueDate(Date issueDate) {
+    public void setIssueDate(String issueDate) {
         this.issueDate = issueDate;
     }
 
-    public Date getRenewalDate() {
+    public String getRenewalDate() {
         return renewalDate;
     }
 
-    public void setRenewalDate(Date renewalDate) {
+    public void setRenewalDate(String renewalDate) {
         this.renewalDate = renewalDate;
     }
 
@@ -50,8 +49,8 @@ public class LiteCredential {
         LiteCredential liteCredential = new LiteCredential();
         liteCredential.setIssueAuthority(credential.getIssuingAuthority());
         liteCredential.setNumber(credential.getNumber());
-        liteCredential.setIssueDate(credential.getCredentialIssueDate());
-        liteCredential.setRenewalDate(credential.getCredentialRenewalDate());
+        liteCredential.setIssueDate(credential.getCredentialIssueDate().toString());
+        liteCredential.setRenewalDate(credential.getCredentialRenewalDate().toString());
         return liteCredential;
     }
 
