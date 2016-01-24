@@ -1,7 +1,5 @@
 package zw.hitrac.csdwebservice.domain;
 
-import java.util.List;
-import zw.co.hitrac.jaxcsd.api.domain.CodedType;
 import zw.co.hitrac.jaxcsd.api.domain.Organization;
 
 /**
@@ -23,14 +21,6 @@ public class LiteOrganization extends LiteCsdEntity {
     public static LiteOrganization valueOf(Organization organization) {
         LiteOrganization liteOrganization = new LiteOrganization();
         liteOrganization.setPrimaryName(organization.getPrimaryName());
-
-        List<CodedType> codedTypes = organization.getCodedTypes();
-        if (codedTypes != null && !codedTypes.isEmpty()) {
-            for (CodedType codedType : codedTypes) {
-                liteOrganization.getCodedTypes().add(LiteCodedType.valueOf(codedType));
-            }
-        }
-
         return liteOrganization;
     }
 

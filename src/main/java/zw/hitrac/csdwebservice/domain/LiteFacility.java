@@ -1,7 +1,5 @@
 package zw.hitrac.csdwebservice.domain;
 
-import java.util.List;
-import zw.co.hitrac.jaxcsd.api.domain.CodedType;
 import zw.co.hitrac.jaxcsd.api.domain.Facility;
 
 /**
@@ -24,13 +22,6 @@ public class LiteFacility extends LiteCsdEntity {
 
         LiteFacility liteFacility = new LiteFacility();
         liteFacility.setPrimaryName(facility.getPrimaryName());
-
-        List<CodedType> codedTypes = facility.getCodedTypes();
-        if (codedTypes != null && !codedTypes.isEmpty()) {
-            for (CodedType codedType : codedTypes) {
-                liteFacility.getCodedTypes().add(LiteCodedType.valueOf(codedType));
-            }
-        }
 
         return liteFacility;
     }

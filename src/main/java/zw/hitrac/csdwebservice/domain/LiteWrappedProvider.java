@@ -16,31 +16,12 @@ public class LiteWrappedProvider {
 
     private LiteProvider liteProvider;
 
-    private List<LiteOrganization> organizations = new ArrayList<>();
-    private List<LiteFacility> facilities = new ArrayList<>();
-
     public LiteProvider getLiteProvider() {
         return liteProvider;
     }
 
     public void setLiteProvider(LiteProvider liteProvider) {
         this.liteProvider = liteProvider;
-    }
-
-    public List<LiteOrganization> getOrganizations() {
-        return organizations;
-    }
-
-    public void setOrganizations(List<LiteOrganization> organizations) {
-        this.organizations = organizations;
-    }
-
-    public List<LiteFacility> getFacilities() {
-        return facilities;
-    }
-
-    public void setFacilities(List<LiteFacility> facilities) {
-        this.facilities = facilities;
     }
 
     public static List<LiteWrappedProvider> valueOf(List<WrappedProvider> providers) {
@@ -83,6 +64,8 @@ public class LiteWrappedProvider {
             }
 
             liteWrappedProvider.setLiteProvider(liteProvider);
+            System.out.println(liteWrappedProvider.getLiteProvider().getFacilities());
+            System.out.println(liteWrappedProvider.getLiteProvider().getOrganizations());
             liteWrappedProviders.add(liteWrappedProvider);
         }
         return liteWrappedProviders;
